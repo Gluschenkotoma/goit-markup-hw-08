@@ -1,0 +1,13 @@
+.logo {
+  @include flexcentering();
+  @include fontwsh(700, 26px, 1.19);
+  font-family: var(--second-font);
+  color: var(--accent-text-color);
+  text-decoration: none;
+}
+.logo__accent-text {
+  color: var(--main-text-color);
+}
+.logo__footer-text {
+  color: var(--title-text-color);
+}

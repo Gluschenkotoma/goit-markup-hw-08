@@ -1,0 +1,28 @@
+.section.features {
+  padding-bottom: 0;
+}
+.features-list {
+  display: flex;
+}
+
+.features-list__item {
+  width: 270px;
+}
+.features-list__item + .features-list__item {
+  margin-left: 30px;
+}
+
+.features-list__image {
+  @extend %flexcentering;
+  background-color: var(--third-bg-color);
+  margin-bottom: var(--card-set-gap);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.features-description {
+  color: var(--additional-text-color);
+  line-height: 1.7;
+  margin-bottom: 0;
+}

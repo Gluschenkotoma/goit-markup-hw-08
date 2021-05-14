@@ -1,0 +1,31 @@
+.develop-list {
+  display: flex;
+  & > .develop-list__item + .develop-list__item {
+    margin-left: 30px;
+  }
+  &__item {
+    position: relative;
+  }
+}
+
+.develop-list__image {
+  position: relative;
+}
+.develop-list__thumb {
+  @extend %flexcentering;
+
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+
+  background-color: var(--bgc-position);
+}
+
+.develop-list__content {
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--title-text-color);
+  text-transform: uppercase;
+}

@@ -1,0 +1,14 @@
+%flexcentering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%blockcentering {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}

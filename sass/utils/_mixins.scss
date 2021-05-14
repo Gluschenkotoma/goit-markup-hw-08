@@ -1,0 +1,39 @@
+@mixin positioning($t, $r, $h, $w) {
+  top: $t;
+  right: $r;
+  height: $h;
+  width: $w;
+}
+@mixin position($t, $l, $h, $w) {
+  top: $t;
+  left: $l;
+  height: $h;
+  width: $w;
+}
+@mixin font($fs, $lh, $ls) {
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+@mixin fontwsh($fw, $fs, $lh) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin fontwhs($fw, $lh, $ls) {
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin fonts($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+@mixin flexcentering() {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,13 @@
+.subtitle {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  .features-list__item & {
+    margin-bottom: 10px;
+  }
+  .footer-container__part & {
+    color: var(--title-text-color);
+    margin-bottom: 20px;
+  }
+}

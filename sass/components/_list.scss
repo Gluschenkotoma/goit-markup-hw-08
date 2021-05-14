@@ -1,0 +1,10 @@
+.list {
+  /* сброс отступов списков */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  .nav & {
+    display: flex;
+  }
+}

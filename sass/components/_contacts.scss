@@ -1,0 +1,25 @@
+.contact-menu {
+  @include flexcentering;
+  margin-left: auto;
+  .contact-menu__item + .contact-menu__item {
+    margin-left: var(--margin);
+  }
+}
+.contact-menu__link {
+  @include flexcentering;
+  padding: 0;
+  background-color: var(--title-text-color);
+  @include fontwhs(500, 1.17, 0.02em);
+  color: var(--additional-text-color);
+
+  transition: color var(--transit-time) var(--timing);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.contact-menu__icon {
+  fill: currentColor;
+  margin-right: 8px;
+}

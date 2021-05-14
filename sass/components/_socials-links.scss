@@ -1,0 +1,30 @@
+.network-list {
+  display: flex;
+  color: var(--icon-color);
+  background-color: var(--title-text-color);
+  & > .network-list__item + .network-list__item {
+    margin-left: 10px;
+  }
+}
+
+.network-list__link {
+  @extend %flexcentering;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: color var(--transit-time) var(--timing),
+    background-color var(--transit-time) var(--timing);
+
+  &:hover,
+  &:focus {
+    color: var(--title-text-color);
+    background-color: var(--accent-text-color);
+  }
+}
+
+/* картинка свг */
+.network-list__icon {
+  fill: currentColor;
+}

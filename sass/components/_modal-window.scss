@@ -1,0 +1,36 @@
+/* modal-window */
+
+.modal {
+  position: absolute;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  padding: 40px;
+  border-radius: 4px;
+  background-color: var(--title-text-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--transit-time) var(--timing);
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  @extend %flexcentering;
+  width: 30px;
+  height: 30px;
+  background-color: var(--title-text-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  transition: fill var(--transit-time) var(--timing);
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+    cursor: pointer;
+  }
+}
