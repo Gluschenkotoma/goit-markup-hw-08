@@ -10,7 +10,7 @@
   }
 
   .burger-btn,
-  .bobile-menu__close-btn {
+  .mobile-menu__close-btn {
     background-color: transparent;
     border: none;
   }
@@ -32,11 +32,12 @@
     transform: translateY(0) translateX(-50%);
   }
 
-  .bobile-menu__close-btn {
+  .mobile-menu__close-btn {
     position: absolute;
     top: 10px;
     right: 15px;
   }
+  // список навигация
   .mobile-menu__list-nav {
     margin-bottom: 302px;
     font-weight: 500;
@@ -48,6 +49,10 @@
   .mobile-menu__item-contacts:not(:last-child) {
     margin-bottom: 32px;
   }
+  .actual {
+    color: var(--accent-text-color);
+  }
+  // список контакты
   .mobile-menu__list-contacts {
     margin-bottom: 64px;
   }
@@ -65,7 +70,7 @@
     letter-spacing: 0.02em;
     color: #757575;
   }
-
+  // список соцсети
   .mobile-menu__list-network {
     display: flex;
     justify-content: space-between;
@@ -77,7 +82,12 @@
     letter-spacing: 0.02em;
     color: #2196f3;
   }
+  .mobile-menu__item-network:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
 }
+
 @media screen and(min-width:768px) {
   .burger-btn,
   .mobile-menu {
