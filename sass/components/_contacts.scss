@@ -1,8 +1,17 @@
-.contact-menu {
-  @include flexcentering;
-  margin-left: auto;
-  .contact-menu__item + .contact-menu__item {
-    margin-left: var(--margin);
+@media screen and(max-width:1199px) {
+  .contact-menu {
+    margin-left: auto;
+  }
+  .contact-menu__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and(min-width:1200px) {
+  .contact-menu {
+    @include flexcentering;
+    .contact-menu__item + .contact-menu__item {
+      margin-left: var(--margin);
+    }
   }
 }
 .contact-menu__link {

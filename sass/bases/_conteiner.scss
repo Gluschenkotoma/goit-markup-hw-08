@@ -1,15 +1,51 @@
 .container {
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  @extend %blockcentering;
   outline: 1px solid tomato;
+
   .header & {
-    display: flex;
-    align-items: center;
-  }
-  .footer & {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @include flexcentering;
+    justify-content: space-between;
   }
 }
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    .header & {
+      display: flex;
+      align-items: center;
+    }
+    .footer & {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+}
+// .container {
+//   width: 1200px;
+//   padding-right: 15px;
+//   padding-left: 15px;
+//   @extend %blockcentering;
+//   outline: 1px solid tomato;
+//   .header & {
+//     display: flex;
+//     align-items: center;
+//   }
+//   .footer & {
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//   }
+// }

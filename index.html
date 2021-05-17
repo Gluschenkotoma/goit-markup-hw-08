@@ -49,6 +49,7 @@
             </li>
           </ul>
         </nav>
+
         <!-- contacts -->
         <ul class="contact-menu list">
           <li class="contact-menu__item">
@@ -68,21 +69,78 @@
             >
           </li>
         </ul>
+        <!-- burger button -->
+        <button type="button" class="burger-btn" data-menu-button>
+          <svg class="burger-icon" width="40" height="40">
+            <use href="./img/symbol-defs.svg#icon-burger-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- ==============  mobile menu  ============= -->
+      <div class="mobile-menu" data-menu>
+        <button type="button" class="bobile-menu__close-btn" data-menu-close>
+          <svg class="bobile-menu__close-btn-icon" width="40" height="40">
+            <use href="./img/symbol-defs.svg#icon-burger-close-btn"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list-nav list">
+          <li class="mobile-menu__item-nav">
+            <a href="./" class="mobile-menu__link-nav link current">Студио</a>
+          </li>
+          <li class="mobile-menu__item-nav">
+            <a href="./portfolio.html" class="mobile-menu__link-nav link"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu__item-nav">
+            <a href="" class="mobile-menu__link-nav link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__list-contacts list">
+          <li class="mobile-menu__item-contacts">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu__link-contacts contact link"
+              >+38 096 111 11 11
+            </a>
+          </li>
+          <li class="mobile-menu__item-contacts">
+            <a
+              href="tel:+380961111111"
+              class="mobile-menu__link-contacts tel link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__list-network list">
+          <li class="mobile-menu__item-network">
+            <a href="" class="mobile menu__link-contact link">Instagram</a>
+          </li>
+          <li class="mobile-menu__item-network">
+            <a href="" class="mobile menu__link-contact link">Twitter</a>
+          </li>
+          <li class="mobile-menu__item-network">
+            <a href="" class="mobile menu__link-contact link">Facebook</a>
+          </li>
+          <li class="mobile-menu__item-network">
+            <a href="" class="mobile menu__link-contact link">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
       <!-- =============HERO==================== -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
+      </section> -->
+      <!-- ===============FEATURES================ -->
 
-        <!-- ===============FEATURES================ -->
-      </section>
-      <section class="section features">
+      <!-- <section class="section features">
         <div class="container">
           <h2 class="section-title visually-hidden">Какие мы</h2>
           <ul class="features-list list">
@@ -137,9 +195,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- ============DEVELOPMENTS============== -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="develop-list list">
@@ -184,9 +242,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- ============TEAM============ -->
-      <section class="section command">
+      <!-- <section class="section command">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
 
@@ -501,9 +559,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- =============REGULAR CUSTOMERS====================== -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="list regular-customers">
@@ -581,15 +639,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- ==============FOOTER======================= -->
     <footer class="footer">
-      <div class="container footer-container">
+      <!-- <div class="container footer-container">
         <div class="footer-container__part">
-          <!-- <a href="./" class="logo link"
-            >Web<span class="logo-studio">studio</span>
-          </a> -->
           <a href="./" class="logo"
             >Web <span class="logo__footer-text">studio</span></a
           >
@@ -611,7 +666,7 @@
         </div>
         <div class="footer-container__part">
           <h3 class="subtitle">Присоединяйтесь</h3>
-          <!-- footer-sociallinks -->
+          
           <ul class="list network-list-footer">
             <li class="network-list-footer__item">
               <a
@@ -680,7 +735,7 @@
           </ul>
         </div>
 
-        <!-- footerform -->
+      
         <form class="footer-form" autocomplete="off">
           <label>
             <b class="footer-form__label">Подпишитесь на рассылку</b>
@@ -698,10 +753,10 @@
             </svg>
           </button>
         </form>
-      </div>
+      </div> -->
     </footer>
     <!-- ==============MODAL WINDOW=============== -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__btn-close" data-modal-close>
           <svg class="modal__icon" width="14" height="14">
@@ -756,7 +811,8 @@
           <button type="submit" class="form__btn-submit">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
