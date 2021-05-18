@@ -143,6 +143,31 @@ img {
   list-style: none;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section.command {
+  background-color: var(--bgc-svg);
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section.features {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .developments {
+    display: none;
+  }
+}
+
 .subtitle {
   font-size: 14px;
   line-height: 1.14;
@@ -156,6 +181,12 @@ img {
 .footer-container__part .subtitle {
   color: var(--title-text-color);
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .subtitle {
+    text-align: center;
+  }
 }
 
 .logo {
