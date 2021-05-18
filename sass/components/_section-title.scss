@@ -1,6 +1,19 @@
 .section-title {
   text-align: center;
-  font-size: 36px;
-  line-height: 1.17;
-  margin-bottom: var(--margin);
+  margin-bottom: var(--card-set-gap);
+}
+@media screen and (max-width: 1199px) {
+  .section-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: var(--margin);
+  }
 }
