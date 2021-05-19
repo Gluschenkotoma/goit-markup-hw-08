@@ -235,6 +235,13 @@ img {
   color: var(--title-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .header .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer .logo {
     -webkit-box-pack: center;
@@ -553,11 +560,6 @@ nav {
   letter-spacing: 0.06em;
   cursor: pointer;
   outline: none;
-}
-
-.header {
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1027,7 +1029,7 @@ nav {
 }
 
 .footer-form__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   margin-right: 12px;
   padding-left: 16px;
@@ -1106,6 +1108,9 @@ nav {
   .footer-form__btn {
     display: block;
     margin: auto;
+  }
+  .footer-form__input {
+    width: 450px;
   }
 }
 
