@@ -11,3 +11,9 @@
 .logo__footer-text {
   color: var(--title-text-color);
 }
+
+@media screen and (max-width: 1199px) {
+  .footer .logo {
+    justify-content: center;
+  }
+}
