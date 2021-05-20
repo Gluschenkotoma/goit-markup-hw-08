@@ -5,8 +5,8 @@
   max-height: 100%;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 100vw;
+  height: 609px;
   padding: 40px;
   border-radius: 4px;
   background-color: var(--title-text-color);
@@ -20,7 +20,9 @@
   position: absolute;
   top: 8px;
   right: 8px;
-  @extend %flexcentering;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   background-color: var(--title-text-color);
@@ -32,5 +34,17 @@
   &:focus {
     fill: var(--accent-text-color);
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
