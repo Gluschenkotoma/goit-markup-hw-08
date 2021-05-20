@@ -1,4 +1,4 @@
-@media screen and(max-width:767px) {
+@media screen and (max-width: 767px) {
   .nav,
   .contact-menu {
     display: none;
@@ -69,6 +69,7 @@
   // список соцсети
   .mobile-menu__list-network {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   .mobile-menu__item-network {

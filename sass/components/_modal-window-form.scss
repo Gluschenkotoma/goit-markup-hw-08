@@ -66,6 +66,7 @@
 
 .form__chackbox {
   @include flexcentering();
+  flex-wrap: wrap;
   font-size: 12px;
   line-height: 1.17px;
   letter-spacing: 0.03em;
